@@ -101,10 +101,10 @@ public class BattleRequestProcessor {
         }
 
         //  50% -> 69%
-        double baseWinProbability = 50 + (partyMemberLevel - 1) * (69 - 50) / 9.0;
+        double baseWinProbability = 55 + (partyMemberLevel - 1) * (69 - 50) / 9.0;
 
         int winProbability = (int) Math.round(baseWinProbability);
-        
+
         // rnd 1 - 100
         int randomValue = RandomGenerator.getDefault().nextInt(1, 101);
 
